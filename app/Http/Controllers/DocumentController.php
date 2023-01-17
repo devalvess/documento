@@ -8,7 +8,7 @@ class DocumentController extends Controller
 {
     public function documents(Request $request)
     {
-        $name = $request->photo->name;
-        $request->photo->storeAs('public/documents' , $name);
+        $name = $request->file->name;
+        $request->file->storeAs('public/documents' , $name);
     }
 }

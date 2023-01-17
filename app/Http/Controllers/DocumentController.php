@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class DocumentController extends Controller
 {
-    public function documents(Request $request)
+    public function document(Request $request)
     {
         $name = $request->file->name;
         $request->file->storeAs('public/documents' , $name);
